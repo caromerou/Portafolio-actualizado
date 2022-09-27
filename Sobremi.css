@@ -1,0 +1,62 @@
+.sobremi-container {
+  display: flex;
+  background-color: white;
+  color: black;
+  height: 70vh;
+  padding: 100px 0 100px 0;
+}
+
+.sobremi-desc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 55%;
+  padding: 0 100px 0 100px;
+}
+
+.sobremi-desc > h3 {
+  margin-bottom: 30px;
+  font-size: 28px;
+}
+
+.sobremi-desc > p {
+  line-height: 1.5;
+}
+
+.sobremi-img {
+  width: 45%;
+  display: flex;
+  align-self: center;
+  overflow: hidden;
+}
+
+@media only screen and (max-width: 960px) {
+  .sobremi-container {
+    flex-direction: column;
+    padding: 0;
+    height: auto;
+  }
+
+  .sobremi-desc {
+    width: 90%;
+    margin: 0 auto;
+    padding: 40px 20px 50px 20px;
+  }
+
+  .sobremi-desc > h3 {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .sobremi-img {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+
+  .sobremi-img > img {
+    width: 100%;
+  }
+}
+/* Acá se estan aplicando los estilos al componente About,
+el css va en la misma carpeta del componente y se nombra igual que él.
+cada componente puede llevar su estilo en particular */
